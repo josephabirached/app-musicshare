@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1995A6E901BD8E3142E294EB /* Pods_app_musicshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B064C72D88D3EE0A1324F1 /* Pods_app_musicshare.framework */; };
 		74822B6F25ACA9D4006F8955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B6E25ACA9D4006F8955 /* AppDelegate.swift */; };
 		74822B7125ACA9D4006F8955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B7025ACA9D4006F8955 /* SceneDelegate.swift */; };
 		74822B7325ACA9D4006F8955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B7225ACA9D4006F8955 /* ViewController.swift */; };
@@ -16,27 +17,10 @@
 		74822B8725ACAA25006F8955 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B8625ACAA25006F8955 /* SignUpViewController.swift */; };
 		74822B8B25ACAA7D006F8955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74822B8925ACAA7D006F8955 /* Main.storyboard */; };
 		74A6251825ACBFA10095B5B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74A6251725ACBFA10095B5B4 /* GoogleService-Info.plist */; };
-		74A6253025ACC2490095B5B4 /* FirebaseAppDistribution in Resources */ = {isa = PBXBuildFile; fileRef = 74A6251A25ACC2320095B5B4 /* FirebaseAppDistribution */; };
-		74A6253125ACC2490095B5B4 /* FirebaseDatabase in Resources */ = {isa = PBXBuildFile; fileRef = 74A6251B25ACC2330095B5B4 /* FirebaseDatabase */; };
-		74A6253225ACC2490095B5B4 /* NOTICES in Resources */ = {isa = PBXBuildFile; fileRef = 74A6251D25ACC2330095B5B4 /* NOTICES */; };
-		74A6253325ACC2490095B5B4 /* FirebaseStorage in Resources */ = {isa = PBXBuildFile; fileRef = 74A6251E25ACC2340095B5B4 /* FirebaseStorage */; };
-		74A6253425ACC2490095B5B4 /* FirebaseDynamicLinks in Resources */ = {isa = PBXBuildFile; fileRef = 74A6251F25ACC2340095B5B4 /* FirebaseDynamicLinks */; };
-		74A6253525ACC2490095B5B4 /* FirebaseAnalytics in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252025ACC2360095B5B4 /* FirebaseAnalytics */; };
-		74A6253625ACC2490095B5B4 /* Google-Mobile-Ads-SDK in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252125ACC2390095B5B4 /* Google-Mobile-Ads-SDK */; };
-		74A6253725ACC2490095B5B4 /* FirebaseInAppMessaging in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252225ACC2390095B5B4 /* FirebaseInAppMessaging */; };
-		74A6253825ACC2490095B5B4 /* FirebaseFirestore in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252325ACC23F0095B5B4 /* FirebaseFirestore */; };
-		74A6253925ACC2490095B5B4 /* FirebaseAuth in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252425ACC2400095B5B4 /* FirebaseAuth */; };
-		74A6253B25ACC2490095B5B4 /* FirebaseMessaging in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252625ACC2400095B5B4 /* FirebaseMessaging */; };
-		74A6253C25ACC2490095B5B4 /* FirebaseFunctions in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252825ACC2410095B5B4 /* FirebaseFunctions */; };
-		74A6253D25ACC2490095B5B4 /* FirebaseCrashlytics in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252925ACC2410095B5B4 /* FirebaseCrashlytics */; };
-		74A6253E25ACC2490095B5B4 /* FirebaseMLModelInterpreter in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252A25ACC2440095B5B4 /* FirebaseMLModelInterpreter */; };
-		74A6253F25ACC2490095B5B4 /* FirebaseMLVision in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252B25ACC2460095B5B4 /* FirebaseMLVision */; };
-		74A6254025ACC2490095B5B4 /* GoogleSignIn in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252C25ACC2470095B5B4 /* GoogleSignIn */; };
-		74A6254125ACC2490095B5B4 /* FirebasePerformance in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252D25ACC2480095B5B4 /* FirebasePerformance */; };
-		74A6254325ACC2490095B5B4 /* FirebaseRemoteConfig in Resources */ = {isa = PBXBuildFile; fileRef = 74A6252F25ACC2490095B5B4 /* FirebaseRemoteConfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080738841FD552483A2CB5BE /* Pods-app-musicshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-musicshare.release.xcconfig"; path = "Target Support Files/Pods-app-musicshare/Pods-app-musicshare.release.xcconfig"; sourceTree = "<group>"; };
 		74822B6B25ACA9D4006F8955 /* app-musicshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-musicshare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74822B6E25ACA9D4006F8955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74822B7025ACA9D4006F8955 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,26 +32,10 @@
 		74822B8625ACAA25006F8955 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		74822B8925ACAA7D006F8955 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		74A6251725ACBFA10095B5B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		74A6251A25ACC2320095B5B4 /* FirebaseAppDistribution */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseAppDistribution; sourceTree = "<group>"; };
-		74A6251B25ACC2330095B5B4 /* FirebaseDatabase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseDatabase; sourceTree = "<group>"; };
 		74A6251C25ACC2330095B5B4 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		74A6251D25ACC2330095B5B4 /* NOTICES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICES; sourceTree = "<group>"; };
-		74A6251E25ACC2340095B5B4 /* FirebaseStorage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseStorage; sourceTree = "<group>"; };
-		74A6251F25ACC2340095B5B4 /* FirebaseDynamicLinks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseDynamicLinks; sourceTree = "<group>"; };
-		74A6252025ACC2360095B5B4 /* FirebaseAnalytics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseAnalytics; sourceTree = "<group>"; };
-		74A6252125ACC2390095B5B4 /* Google-Mobile-Ads-SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Google-Mobile-Ads-SDK"; sourceTree = "<group>"; };
-		74A6252225ACC2390095B5B4 /* FirebaseInAppMessaging */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseInAppMessaging; sourceTree = "<group>"; };
-		74A6252325ACC23F0095B5B4 /* FirebaseFirestore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseFirestore; sourceTree = "<group>"; };
-		74A6252425ACC2400095B5B4 /* FirebaseAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseAuth; sourceTree = "<group>"; };
-		74A6252625ACC2400095B5B4 /* FirebaseMessaging */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseMessaging; sourceTree = "<group>"; };
 		74A6252725ACC2400095B5B4 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
-		74A6252825ACC2410095B5B4 /* FirebaseFunctions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseFunctions; sourceTree = "<group>"; };
-		74A6252925ACC2410095B5B4 /* FirebaseCrashlytics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseCrashlytics; sourceTree = "<group>"; };
-		74A6252A25ACC2440095B5B4 /* FirebaseMLModelInterpreter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseMLModelInterpreter; sourceTree = "<group>"; };
-		74A6252B25ACC2460095B5B4 /* FirebaseMLVision */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseMLVision; sourceTree = "<group>"; };
-		74A6252C25ACC2470095B5B4 /* GoogleSignIn */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleSignIn; sourceTree = "<group>"; };
-		74A6252D25ACC2480095B5B4 /* FirebasePerformance */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebasePerformance; sourceTree = "<group>"; };
-		74A6252F25ACC2490095B5B4 /* FirebaseRemoteConfig */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseRemoteConfig; sourceTree = "<group>"; };
+		A31650925250DFA3E35C200A /* Pods-app-musicshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-musicshare.debug.xcconfig"; path = "Target Support Files/Pods-app-musicshare/Pods-app-musicshare.debug.xcconfig"; sourceTree = "<group>"; };
+		F0B064C72D88D3EE0A1324F1 /* Pods_app_musicshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_musicshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1995A6E901BD8E3142E294EB /* Pods_app_musicshare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F395D143FD3DABFEDF32F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0B064C72D88D3EE0A1324F1 /* Pods_app_musicshare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74822B6225ACA9D4006F8955 = {
 			isa = PBXGroup;
 			children = (
 				74822B6D25ACA9D4006F8955 /* app-musicshare */,
 				74822B6C25ACA9D4006F8955 /* Products */,
+				85E16B03F883E2FC60672A27 /* Pods */,
+				3F395D143FD3DABFEDF32F61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,26 +79,6 @@
 		74822B6D25ACA9D4006F8955 /* app-musicshare */ = {
 			isa = PBXGroup;
 			children = (
-				74A6252725ACC2400095B5B4 /* Firebase.h */,
-				74A6252025ACC2360095B5B4 /* FirebaseAnalytics */,
-				74A6251A25ACC2320095B5B4 /* FirebaseAppDistribution */,
-				74A6252425ACC2400095B5B4 /* FirebaseAuth */,
-				74A6252925ACC2410095B5B4 /* FirebaseCrashlytics */,
-				74A6251B25ACC2330095B5B4 /* FirebaseDatabase */,
-				74A6251F25ACC2340095B5B4 /* FirebaseDynamicLinks */,
-				74A6252325ACC23F0095B5B4 /* FirebaseFirestore */,
-				74A6252825ACC2410095B5B4 /* FirebaseFunctions */,
-				74A6252225ACC2390095B5B4 /* FirebaseInAppMessaging */,
-				74A6252625ACC2400095B5B4 /* FirebaseMessaging */,
-				74A6252A25ACC2440095B5B4 /* FirebaseMLModelInterpreter */,
-				74A6252B25ACC2460095B5B4 /* FirebaseMLVision */,
-				74A6252D25ACC2480095B5B4 /* FirebasePerformance */,
-				74A6252F25ACC2490095B5B4 /* FirebaseRemoteConfig */,
-				74A6251E25ACC2340095B5B4 /* FirebaseStorage */,
-				74A6252125ACC2390095B5B4 /* Google-Mobile-Ads-SDK */,
-				74A6252C25ACC2470095B5B4 /* GoogleSignIn */,
-				74A6251C25ACC2330095B5B4 /* module.modulemap */,
-				74A6251D25ACC2330095B5B4 /* NOTICES */,
 				74822B6E25ACA9D4006F8955 /* AppDelegate.swift */,
 				74822B7025ACA9D4006F8955 /* SceneDelegate.swift */,
 				74822B7225ACA9D4006F8955 /* ViewController.swift */,
@@ -128,10 +87,21 @@
 				74822B8625ACAA25006F8955 /* SignUpViewController.swift */,
 				74822B7A25ACA9D5006F8955 /* Assets.xcassets */,
 				74822B7F25ACA9D5006F8955 /* Info.plist */,
-				74A6251725ACBFA10095B5B4 /* GoogleService-Info.plist */,
 				74822B7725ACA9D4006F8955 /* app_musicshare.xcdatamodeld */,
+				74A6252725ACC2400095B5B4 /* Firebase.h */,
+				74A6251725ACBFA10095B5B4 /* GoogleService-Info.plist */,
+				74A6251C25ACC2330095B5B4 /* module.modulemap */,
 			);
 			path = "app-musicshare";
+			sourceTree = "<group>";
+		};
+		85E16B03F883E2FC60672A27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A31650925250DFA3E35C200A /* Pods-app-musicshare.debug.xcconfig */,
+				080738841FD552483A2CB5BE /* Pods-app-musicshare.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74822B8225ACA9D5006F8955 /* Build configuration list for PBXNativeTarget "app-musicshare" */;
 			buildPhases = (
+				B6C656786A40BA549098BE3B /* [CP] Check Pods Manifest.lock */,
 				74822B6725ACA9D4006F8955 /* Sources */,
 				74822B6825ACA9D4006F8955 /* Frameworks */,
 				74822B6925ACA9D4006F8955 /* Resources */,
+				92944583BF8BFE18C1269843 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,32 +163,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A6254125ACC2490095B5B4 /* FirebasePerformance in Resources */,
-				74A6253C25ACC2490095B5B4 /* FirebaseFunctions in Resources */,
-				74A6253B25ACC2490095B5B4 /* FirebaseMessaging in Resources */,
-				74A6253225ACC2490095B5B4 /* NOTICES in Resources */,
-				74A6253E25ACC2490095B5B4 /* FirebaseMLModelInterpreter in Resources */,
-				74A6253825ACC2490095B5B4 /* FirebaseFirestore in Resources */,
-				74A6253125ACC2490095B5B4 /* FirebaseDatabase in Resources */,
-				74A6253F25ACC2490095B5B4 /* FirebaseMLVision in Resources */,
 				74822B7E25ACA9D5006F8955 /* LaunchScreen.storyboard in Resources */,
-				74A6253025ACC2490095B5B4 /* FirebaseAppDistribution in Resources */,
-				74A6253925ACC2490095B5B4 /* FirebaseAuth in Resources */,
 				74A6251825ACBFA10095B5B4 /* GoogleService-Info.plist in Resources */,
-				74A6253725ACC2490095B5B4 /* FirebaseInAppMessaging in Resources */,
-				74A6254325ACC2490095B5B4 /* FirebaseRemoteConfig in Resources */,
-				74A6253425ACC2490095B5B4 /* FirebaseDynamicLinks in Resources */,
-				74A6253325ACC2490095B5B4 /* FirebaseStorage in Resources */,
-				74A6253625ACC2490095B5B4 /* Google-Mobile-Ads-SDK in Resources */,
 				74822B7B25ACA9D5006F8955 /* Assets.xcassets in Resources */,
-				74A6253D25ACC2490095B5B4 /* FirebaseCrashlytics in Resources */,
-				74A6253525ACC2490095B5B4 /* FirebaseAnalytics in Resources */,
 				74822B8B25ACAA7D006F8955 /* Main.storyboard in Resources */,
-				74A6254025ACC2490095B5B4 /* GoogleSignIn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92944583BF8BFE18C1269843 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-app-musicshare/Pods-app-musicshare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-app-musicshare/Pods-app-musicshare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app-musicshare/Pods-app-musicshare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C656786A40BA549098BE3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app-musicshare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74822B6725ACA9D4006F8955 /* Sources */ = {
@@ -363,6 +359,7 @@
 		};
 		74822B8325ACA9D5006F8955 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31650925250DFA3E35C200A /* Pods-app-musicshare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +378,7 @@
 		};
 		74822B8425ACA9D5006F8955 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080738841FD552483A2CB5BE /* Pods-app-musicshare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
