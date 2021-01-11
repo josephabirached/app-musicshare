@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
             if(signinPassword.text != ""){
                 if(isValidEmail(signinEmail.text ?? "")){
                     if(checkUser(signinEmail.text ?? "", password: signinPassword.text ?? "")){
-                        errorMsg = "Welcome"
+                        errorMsg = ""
                     }else{
                         errorMessage = "Invalid email or password"
                     }
@@ -56,31 +57,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //tableView.dataSource = self
-        //tableView.delegate = self
         
         fetchUsers()
         
-       /* if let path = Bundle.main.path(forResource: "Users", ofType: "json"){
-            if let str = try? String(contentsOfFile: path){
-                
-                let rawData = Data(str.utf8)
-                
-                if let jsonData = try? JSONDecoder().decode(Users.self, from: rawData){
-                    data = jsonData.results
-                }else{
-                    errorMsg = "ERROR: no json data"
-                }
-            } else {
-                errorMsg = "ERROR: no txt data"
-            }
-        }else {
-            errorMsg = "ERROR: file does not exist !"
-        }
-        
-        if let error = errorMsg{
-            print(error)
-        }*/
     }
     
     func fetchUsers(){
