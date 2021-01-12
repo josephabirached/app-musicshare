@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import CoreData
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -16,59 +16,46 @@ class ViewController: UIViewController {
     @IBOutlet weak var signinError: UILabel!
     @IBOutlet weak var signin: UIButton!
     
+    //Sign in button clicked
     @IBAction func signin(_ sender: UIButton) {
-        var errorMessage: String = ""
         
         if(signinEmail.text != ""){
             if(signinPassword.text != ""){
-                if(isValidEmail(signinEmail.text ?? "")){
-                    if(checkUser(signinEmail.text ?? "", password: signinPassword.text ?? "")){
-                        errorMsg = ""
-                    }else{
-                        errorMessage = "Invalid email or password"
-                    }
+                if(isValidEmail(signinEmail.text!)){
+                    
+                    //Create an instance of Firebase auth and try to login
+                    let auth = Auth.auth()
+                        auth.signIn(withEmail: signinEmail.text!, password: signinPassword.text!) { (authResult, error) in
+                            //Checks if the email exists and/or if the password is correct
+                            if error != nil{ print(error!) ; self.displayError("Wrong email or password") }
+                            else{ self.displayError("") }
+                        }
                 }
                 else{
-                    errorMessage = "Please enter a valid email!"
+                    displayError("Please enter a valid email!")
                 }
             }
             else{
-                errorMessage = "Please enter a password!"
+                displayError("Please enter a password!")
             }
         }else{
-            errorMessage = "Please enter an email!"
+            displayError("Please enter an email!")
         }
         
-        if(errorMessage != ""){
-            signinError.textColor = UIColor.red
-            signinError.text = errorMessage
-        }else{
-            signinError.textColor = UIColor.green
-            signinError.text = "No error"
-        }
     }
     
-    //Coradata
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    //Data for the table
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         
-        fetchUsers()
-        
     }
     
-    func fetchUsers(){
-        //fetch the data from core data
-        //context.fetch
-    }
     
     var errorMsg : String?
 
+    //Checks if the email is valid
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
@@ -76,20 +63,16 @@ class ViewController: UIViewController {
         return emailPred.evaluate(with: email)
     }
     
-    func checkUser(_ email: String, password: String) -> Bool{
-        if email == "" || password == "" {
-            return false
+    //Displays the error message
+    func displayError(_ message: String, _ color: UIColor = UIColor.red){
+        if message != "" {
+            signinError.textColor = color
+            signinError.text = message
         }
-        
-        /*for x in data{
-            if x.email == email {
-                if x.password == password{
-                    return true
-                }
-                return false
-            }
-        }*/
-        return false
+        else{
+            signinError.textColor = UIColor.green
+            signinError.text = "No error!"
+        }
     }
     
 }
