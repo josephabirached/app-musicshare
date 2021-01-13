@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignInViewController.swift
 //  Projet
 //
 //  Created by Joseph Abi Rached on 11/01/2021.
@@ -8,27 +8,31 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
 
-    //Sign In
-    @IBOutlet weak var signinEmail: UITextField!
-    @IBOutlet weak var signinPassword: UITextField!
+    //Sign in
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signinError: UILabel!
-    @IBOutlet weak var signin: UIButton!
+
+    
     
     //Sign in button clicked
-    @IBAction func signin(_ sender: UIButton) {
-        
-        if(signinEmail.text != ""){
-            if(signinPassword.text != ""){
-                if(isValidEmail(signinEmail.text!)){
+    @IBAction func signIn(_ sender: Any) {
+        if(email.text != ""){
+            if(password.text != ""){
+                if(isValidEmail(email.text!)){
                     
                     //Create an instance of Firebase auth and try to login
                     let auth = Auth.auth()
-                        auth.signIn(withEmail: signinEmail.text!, password: signinPassword.text!) { (authResult, error) in
+                        auth.signIn(withEmail: email.text!, password: password.text!) { (authResult, error) in
                             //Checks if the email exists and/or if the password is correct
                             if error != nil{ print(error!) ; self.displayError("Wrong email or password") }
-                            else{ self.displayError("") }
+                            else{
+                                self.displayError("")
+                                UserDefaults.standard.set(self.email.text!, forKey: "email")
+                                
+                            }
                         }
                 }
                 else{
@@ -52,8 +56,6 @@ class ViewController: UIViewController {
         
     }
     
-    
-    var errorMsg : String?
 
     //Checks if the email is valid
     func isValidEmail(_ email: String) -> Bool {
@@ -76,5 +78,3 @@ class ViewController: UIViewController {
     }
     
 }
-
-

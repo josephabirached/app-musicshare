@@ -10,7 +10,6 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
@@ -19,7 +18,7 @@ class SignUpViewController: UIViewController {
     @IBAction func signup(_ sender: Any) {
         if email.text != "" && isValidEmail(email.text ?? ""){
             if password.text != ""{
-                if password.text!.count > 6 {
+                if password.text!.count >= 6 {
                     if password.text == confirmPassword.text{
                         //sign up the user here
                         let auth = Auth.auth()

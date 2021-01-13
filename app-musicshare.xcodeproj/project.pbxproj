@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1995A6E901BD8E3142E294EB /* Pods_app_musicshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B064C72D88D3EE0A1324F1 /* Pods_app_musicshare.framework */; };
+		7429CDE525AFA8930002B3C5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429CDE425AFA8930002B3C5 /* SignInViewController.swift */; };
+		744F54A725AFB4AB007087B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744F54A625AFB4AB007087B4 /* Home.storyboard */; };
+		744F54AA25AFB5FD007087B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F54A925AFB5FD007087B4 /* HomeViewController.swift */; };
 		74822B6F25ACA9D4006F8955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B6E25ACA9D4006F8955 /* AppDelegate.swift */; };
 		74822B7125ACA9D4006F8955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B7025ACA9D4006F8955 /* SceneDelegate.swift */; };
 		74822B7325ACA9D4006F8955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B7225ACA9D4006F8955 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		080738841FD552483A2CB5BE /* Pods-app-musicshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-musicshare.release.xcconfig"; path = "Target Support Files/Pods-app-musicshare/Pods-app-musicshare.release.xcconfig"; sourceTree = "<group>"; };
+		7429CDE425AFA8930002B3C5 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		744F54A625AFB4AB007087B4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		744F54A925AFB5FD007087B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		74822B6B25ACA9D4006F8955 /* app-musicshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-musicshare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74822B6E25ACA9D4006F8955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74822B7025ACA9D4006F8955 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		744F548E25AFB3F6007087B4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				74822B8925ACAA7D006F8955 /* Main.storyboard */,
+				74822B7C25ACA9D5006F8955 /* LaunchScreen.storyboard */,
+				744F54A625AFB4AB007087B4 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		744F549025AFB43D007087B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74822B7225ACA9D4006F8955 /* ViewController.swift */,
+				7429CDE425AFA8930002B3C5 /* SignInViewController.swift */,
+				74822B8625ACAA25006F8955 /* SignUpViewController.swift */,
+				744F54A925AFB5FD007087B4 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		74822B6225ACA9D4006F8955 = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +106,10 @@
 		74822B6D25ACA9D4006F8955 /* app-musicshare */ = {
 			isa = PBXGroup;
 			children = (
+				744F549025AFB43D007087B4 /* ViewControllers */,
+				744F548E25AFB3F6007087B4 /* Storyboards */,
 				74822B6E25ACA9D4006F8955 /* AppDelegate.swift */,
 				74822B7025ACA9D4006F8955 /* SceneDelegate.swift */,
-				74822B7225ACA9D4006F8955 /* ViewController.swift */,
-				74822B8925ACAA7D006F8955 /* Main.storyboard */,
-				74822B7C25ACA9D5006F8955 /* LaunchScreen.storyboard */,
-				74822B8625ACAA25006F8955 /* SignUpViewController.swift */,
 				74822B7A25ACA9D5006F8955 /* Assets.xcassets */,
 				74822B7F25ACA9D5006F8955 /* Info.plist */,
 				74822B7725ACA9D4006F8955 /* app_musicshare.xcdatamodeld */,
@@ -164,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74822B7E25ACA9D5006F8955 /* LaunchScreen.storyboard in Resources */,
+				744F54A725AFB4AB007087B4 /* Home.storyboard in Resources */,
 				74A6251825ACBFA10095B5B4 /* GoogleService-Info.plist in Resources */,
 				74822B7B25ACA9D5006F8955 /* Assets.xcassets in Resources */,
 				74822B8B25ACAA7D006F8955 /* Main.storyboard in Resources */,
@@ -221,8 +247,10 @@
 			files = (
 				74822B7325ACA9D4006F8955 /* ViewController.swift in Sources */,
 				74822B6F25ACA9D4006F8955 /* AppDelegate.swift in Sources */,
+				7429CDE525AFA8930002B3C5 /* SignInViewController.swift in Sources */,
 				74822B7925ACA9D4006F8955 /* app_musicshare.xcdatamodeld in Sources */,
 				74822B7125ACA9D4006F8955 /* SceneDelegate.swift in Sources */,
+				744F54AA25AFB5FD007087B4 /* HomeViewController.swift in Sources */,
 				74822B8725ACAA25006F8955 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
