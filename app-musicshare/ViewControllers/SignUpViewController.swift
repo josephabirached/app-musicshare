@@ -25,12 +25,19 @@ class SignUpViewController: UIViewController {
                         
                         auth.createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
                             if error != nil {
-                                self.displayError(error?.localizedDescription ?? "An error has occured")
-                                return
+                                self.displayError("This email is already in use!")
                             }
                             else{
                                 self.displayError("")
-                                return
+                                UserDefaults.standard.set(self.email.text!, forKey: "email")
+                                
+                                let storyboard = UIStoryboard(name: "Home", bundle: Bundle.main)
+                                let viewController = storyboard.instantiateInitialViewController()
+                                 
+                                if let viewController = viewController {
+                                    viewController.modalPresentationStyle = .fullScreen
+                                    self.present(viewController, animated: true, completion: nil)
+                                }
                             }
                             
                         }
@@ -79,10 +86,6 @@ class SignUpViewController: UIViewController {
         if message != "" {
             errorLabel.textColor = color
             errorLabel.text = message
-        }
-        else{
-            errorLabel.textColor = UIColor.green
-            errorLabel.text = "No error!"
         }
     }
     

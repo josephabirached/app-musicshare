@@ -148,6 +148,14 @@
             </objects>
             <point key="canvasLocation" x="1119" y="134"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="OyW-Ws-S03">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="50i-dz-Ap9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fL-mB-SIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887" y="-196"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="b7C-M6-V8H">
             <objects>
@@ -206,7 +214,7 @@
                                 <rect key="frame" x="161" y="444" width="213" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2MU-qu-e7J"/>

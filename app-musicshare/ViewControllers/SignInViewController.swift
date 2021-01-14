@@ -31,7 +31,13 @@ class SignInViewController: UIViewController {
                             else{
                                 self.displayError("")
                                 UserDefaults.standard.set(self.email.text!, forKey: "email")
-                                
+                                let storyboard = UIStoryboard(name: "Home", bundle: Bundle.main)
+                                let viewController = storyboard.instantiateInitialViewController()
+                                 
+                                if let viewController = viewController {
+                                    viewController.modalPresentationStyle = .fullScreen
+                                    self.present(viewController, animated: true, completion: nil)
+                                }
                             }
                         }
                 }
@@ -70,10 +76,6 @@ class SignInViewController: UIViewController {
         if message != "" {
             signinError.textColor = color
             signinError.text = message
-        }
-        else{
-            signinError.textColor = UIColor.green
-            signinError.text = "No error!"
         }
     }
     
