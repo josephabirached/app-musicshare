@@ -14,6 +14,7 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var songList: UITableView!{
         didSet{
             songList.dataSource = self
+            songList.allowsSelection = true
         }
     }
     var songs = [Song]()
@@ -35,18 +36,37 @@ class HomeViewController: UIViewController{
             }
             
         }
-        
     }
-
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "songDetail"{
+            let songDetailsShow = segue.destination as! SongViewController
+            if let selectedIndex = songList?.indexPathForSelectedRow![1]{
+                print(selectedIndex)
+                songDetailsShow.artist = songs[selectedIndex].artist
+                songDetailsShow.song = songs[selectedIndex].name
+                /*if let _: String = songs[selectedIndex].image{
+                    let url = URL(string: songs[selectedIndex].image)
+                    URLSession.shared.dataTask(with: url!, completionHandler:  { (data, response, error) in
+                        if error != nil{
+                            print(error!)
+                            return
+                        }
+                        //Fetchs the image
+                        print("image fetched!")
+                        DispatchQueue.main.async {
+                          songDetailsShow.imageUI = UIImage(data: data!)!
+                        }
+                        
+                    }).resume()
+                }*/
+                
+            }
+        }
+    }
 }
 
-class SongCell: UITableViewCell{
-   // @IBOutlet weak var songLabel: UILabel!
-    
-}
-
-extension HomeViewController: UITableViewDataSource{
+extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,19 +74,30 @@ extension HomeViewController: UITableViewDataSource{
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print("Test")
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let song = songs[indexPath.row]
-        let cell = songList.dequeueReusableCell(withIdentifier: "songCell", for: indexPath)
+        let cell = songList.dequeueReusableCell(withIdentifier: "SongCell", for: indexPath)
         
-        if let img = UIImage(contentsOfFile: song.image) {
-            cell.textLabel?.text = song.name
-            cell.largeContentImage = img
-        }
-        //   cell.artistLabel?.text = song.artist
+        //cell.imageView?.image = UIImage(named: "music.note")
         
+        cell.textLabel?.text = song.name
+        cell.detailTextLabel?.text = song.artist
+        //cell.artistLabel?.text = song.artist
+        //cell.songLabel?.text = song.name
         
         return cell
     }
+    
+
+    
+    
+    
     
     
 }
