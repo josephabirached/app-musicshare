@@ -45,21 +45,7 @@ class HomeViewController: UIViewController{
                 print(selectedIndex)
                 songDetailsShow.artist = songs[selectedIndex].artist
                 songDetailsShow.song = songs[selectedIndex].name
-                /*if let _: String = songs[selectedIndex].image{
-                    let url = URL(string: songs[selectedIndex].image)
-                    URLSession.shared.dataTask(with: url!, completionHandler:  { (data, response, error) in
-                        if error != nil{
-                            print(error!)
-                            return
-                        }
-                        //Fetchs the image
-                        print("image fetched!")
-                        DispatchQueue.main.async {
-                          songDetailsShow.imageUI = UIImage(data: data!)!
-                        }
-                        
-                    }).resume()
-                }*/
+                songDetailsShow.imageUI = songs[selectedIndex].image
                 
             }
         }
