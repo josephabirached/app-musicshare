@@ -46,6 +46,7 @@ class HomeViewController: UIViewController{
                 songDetailsShow.artist = songs[selectedIndex].artist
                 songDetailsShow.song = songs[selectedIndex].name
                 songDetailsShow.imageUI = songs[selectedIndex].image
+                songDetailsShow.songURL = songs[selectedIndex].songUrl
                 
             }
         }

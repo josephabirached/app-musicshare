@@ -56,6 +56,9 @@
                                 <state key="normal">
                                     <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
                                 </state>
+                                <connections>
+                                    <action selector="togglePlaySong:" destination="Ga7-xq-oXU" eventType="touchUpInside" id="twX-SG-1cI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bn-ut-2g3">
                                 <rect key="frame" x="56" y="539" width="302" height="30"/>
@@ -71,6 +74,7 @@
                     <navigationItem key="navigationItem" id="Ssz-Fm-gmu"/>
                     <connections>
                         <outlet property="artistName" destination="0bn-ut-2g3" id="UKy-Yv-6Kr"/>
+                        <outlet property="playButton" destination="IN8-bN-mrH" id="8rS-16-twg"/>
                         <outlet property="songImage" destination="UIK-rg-4RY" id="aWS-8T-sp6"/>
                         <outlet property="songTitle" destination="32w-mm-9mH" id="WVV-Cu-lz3"/>
                     </connections>
@@ -185,7 +189,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qRB-Po-3fG"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="person" catalog="system" id="Q6F-Dq-8W5">
                         <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
@@ -207,9 +211,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
