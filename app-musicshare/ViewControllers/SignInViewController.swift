@@ -30,7 +30,7 @@ class SignInViewController: UIViewController {
                             if error != nil{ print(error!) ; self.displayError("Wrong email or password") }
                             else{
                                 self.displayError("")
-                                UserDefaults.standard.set(self.email.text!, forKey: "email")
+                                UserDefaults.standard.set(self.email.text!, forKey: "emailKey")
                                 let storyboard = UIStoryboard(name: "Home", bundle: Bundle.main)
                                 let viewController = storyboard.instantiateInitialViewController()
                                  

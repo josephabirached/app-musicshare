@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -217,20 +218,44 @@
         <!--Profile-->
         <scene sceneID="Evi-Ka-3WA">
             <objects>
-                <viewController id="g72-F9-tuD" sceneMemberID="viewController">
+                <viewController id="g72-F9-tuD" customClass="ProfileViewController" customModule="app_musicshare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iw6-H9-Opa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3D-Pq-lKi">
+                                <rect key="frame" x="153" y="419" width="108" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="g72-F9-tuD" eventType="touchUpInside" id="Pg3-JC-RNq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EmailLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5p-UK-VvB">
+                                <rect key="frame" x="20" y="306" width="374" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qRB-Po-3fG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="person" catalog="system" id="Q6F-Dq-8W5">
                         <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="emailLabel" destination="p5p-UK-VvB" id="zWa-Ne-j0E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vq-CW-YcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-977" y="-271"/>
+            <point key="canvasLocation" x="-978.26086956521749" y="-271.20535714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -241,8 +266,14 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

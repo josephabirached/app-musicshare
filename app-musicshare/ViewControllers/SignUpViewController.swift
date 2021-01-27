@@ -29,7 +29,7 @@ class SignUpViewController: UIViewController {
                             }
                             else{
                                 self.displayError("")
-                                UserDefaults.standard.set(self.email.text!, forKey: "email")
+                                UserDefaults.standard.set(self.email.text!, forKey: "emailKey")
                                 
                                 let storyboard = UIStoryboard(name: "Home", bundle: Bundle.main)
                                 let viewController = storyboard.instantiateInitialViewController()

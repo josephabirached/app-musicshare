@@ -22,6 +22,7 @@
 		74822B8725ACAA25006F8955 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B8625ACAA25006F8955 /* SignUpViewController.swift */; };
 		74822B8B25ACAA7D006F8955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74822B8925ACAA7D006F8955 /* Main.storyboard */; };
 		74A6251825ACBFA10095B5B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74A6251725ACBFA10095B5B4 /* GoogleService-Info.plist */; };
+		74A77F5125C1CEA100FA895D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A77F5025C1CEA100FA895D /* ProfileViewController.swift */; };
 		74DD633F25B82F2A009C30CD /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DD633E25B82F2A009C30CD /* SongViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		74A6251725ACBFA10095B5B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74A6251C25ACC2330095B5B4 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		74A6252725ACC2400095B5B4 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		74A77F5025C1CEA100FA895D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		74DD633E25B82F2A009C30CD /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		A31650925250DFA3E35C200A /* Pods-app-musicshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-musicshare.debug.xcconfig"; path = "Target Support Files/Pods-app-musicshare/Pods-app-musicshare.debug.xcconfig"; sourceTree = "<group>"; };
 		F0B064C72D88D3EE0A1324F1 /* Pods_app_musicshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_musicshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				744F54A925AFB5FD007087B4 /* HomeViewController.swift */,
 				74DD633E25B82F2A009C30CD /* SongViewController.swift */,
 				7462AF6425C05BD10032D7A2 /* SearchViewController.swift */,
+				74A77F5025C1CEA100FA895D /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				74822B6F25ACA9D4006F8955 /* AppDelegate.swift in Sources */,
 				7429CDE525AFA8930002B3C5 /* SignInViewController.swift in Sources */,
 				74822B7925ACA9D4006F8955 /* app_musicshare.xcdatamodeld in Sources */,
+				74A77F5125C1CEA100FA895D /* ProfileViewController.swift in Sources */,
 				74822B7125ACA9D4006F8955 /* SceneDelegate.swift in Sources */,
 				74DD633F25B82F2A009C30CD /* SongViewController.swift in Sources */,
 				744F54AA25AFB5FD007087B4 /* HomeViewController.swift in Sources */,
