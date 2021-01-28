@@ -24,6 +24,7 @@ class SongViewController: UIViewController{
     var imageUI = ""
     var songURL = ""
     var player: AVAudioPlayer?
+    var isPlayable = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +56,7 @@ class SongViewController: UIViewController{
                     try AVAudioSession.sharedInstance().setActive(true)
                     
                     self.player = try AVAudioPlayer(data: data!)
+                    self.isPlayable = true
                     
                     }
                 catch let error{
@@ -68,7 +70,7 @@ class SongViewController: UIViewController{
     
     @IBAction func togglePlaySong(_ sender: Any) {
         
-        if(!player!.isPlaying){
+        if(!player!.isPlaying && isPlayable){
             playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             player!.play()
         }else{

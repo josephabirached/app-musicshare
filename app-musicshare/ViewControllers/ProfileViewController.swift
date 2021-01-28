@@ -23,7 +23,6 @@ class ProfileViewController: UIViewController{
     }
     
     @IBAction func logOut(_ sender: Any) {
-        //UserDefaults.standard.string(forKey: "email")
         UserDefaults.standard.removeObject(forKey: "emailKey")
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyboard.instantiateInitialViewController()

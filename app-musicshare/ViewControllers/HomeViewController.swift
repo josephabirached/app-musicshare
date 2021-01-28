@@ -42,7 +42,7 @@ class HomeViewController: UIViewController{
         if segue.identifier == "songDetail"{
             let songDetailsShow = segue.destination as! SongViewController
             if let selectedIndex = songList?.indexPathForSelectedRow![1]{
-                print(selectedIndex)
+                
                 songDetailsShow.artist = songs[selectedIndex].artist
                 songDetailsShow.song = songs[selectedIndex].name
                 songDetailsShow.imageUI = songs[selectedIndex].image
@@ -63,7 +63,6 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("Test")
     }
     
     
@@ -71,12 +70,8 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         let song = songs[indexPath.row]
         let cell = songList.dequeueReusableCell(withIdentifier: "SongCell", for: indexPath)
         
-        //cell.imageView?.image = UIImage(named: "music.note")
-        
         cell.textLabel?.text = song.name
         cell.detailTextLabel?.text = song.artist
-        //cell.artistLabel?.text = song.artist
-        //cell.songLabel?.text = song.name
         
         return cell
     }

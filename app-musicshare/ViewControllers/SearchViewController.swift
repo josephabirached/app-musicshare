@@ -51,7 +51,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate{
         if segue.identifier == "songDetail"{
             let songDetailsShow = segue.destination as! SongViewController
             if let selectedIndex = songList?.indexPathForSelectedRow![1]{
-                print(selectedIndex)
                 songDetailsShow.artist = songs[selectedIndex].artist
                 songDetailsShow.song = songs[selectedIndex].name
                 songDetailsShow.imageUI = songs[selectedIndex].image
@@ -95,7 +94,6 @@ extension SearchViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("Test")
     }
     
     
