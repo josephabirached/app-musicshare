@@ -50,12 +50,22 @@ class SearchViewController: UIViewController, UISearchBarDelegate{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "songDetail"{
             let songDetailsShow = segue.destination as! SongViewController
-            if let selectedIndex = songList?.indexPathForSelectedRow![1]{
-                songDetailsShow.artist = songs[selectedIndex].artist
-                songDetailsShow.song = songs[selectedIndex].name
-                songDetailsShow.imageUI = songs[selectedIndex].image
-                songDetailsShow.songURL = songs[selectedIndex].songUrl
-                
+            if isSearching{
+                if let selectedIndex = songList?.indexPathForSelectedRow![1]{
+                    songDetailsShow.artist = searchSongs[selectedIndex].artist
+                    songDetailsShow.song = searchSongs[selectedIndex].name
+                    songDetailsShow.imageUI = searchSongs[selectedIndex].image
+                    songDetailsShow.songURL = searchSongs[selectedIndex].songUrl
+                    
+                }
+            }
+            else{
+                if let selectedIndex = songList?.indexPathForSelectedRow![1]{
+                    songDetailsShow.artist = songs[selectedIndex].artist
+                    songDetailsShow.song = songs[selectedIndex].name
+                    songDetailsShow.imageUI = songs[selectedIndex].image
+                    songDetailsShow.songURL = songs[selectedIndex].songUrl
+                }
             }
         }
     }
